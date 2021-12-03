@@ -32,5 +32,8 @@ isAuthenticated(){
   return false;
 }
 
+logout(){
+  localStorage.clear();
+}
 
 }
