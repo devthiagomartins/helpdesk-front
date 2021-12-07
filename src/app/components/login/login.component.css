@@ -37,3 +37,16 @@ button {
 mat-icon {
    opacity: .6;
 }
+
+p {
+   font-weight:400;
+   font-family: sans-serif;
+   opacity: 0.6;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 2rem;
+     
+   
+
+}
