@@ -5,4 +5,17 @@
 
 table {
     width: 100%;
+    border-radius: 50%;
+}
+
+table th{
+    color: #44475a;
+    font-weight: bold;
+   font-family: 'Fira Code';
+}
+
+table td {
+    color:#988BC7;
+    font-weight: 500;
+    font-family: 'Fira Code';
 }

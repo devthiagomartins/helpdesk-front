@@ -1,11 +1,12 @@
 .container {
     height: 100%;
+    background-color: #191622;
 }
 
 .sidenav {
     width: 13rem;
-    color: white;
-    background:#530082;
+    color: #E1E1E6;
+    background:#483C67;
 }
 
 img {
@@ -15,7 +16,9 @@ img {
 }
 
 .sidenav a {
-    color: white;
+    color: #E1E1E6;
+    font-family: 'Fira Code';
+
 }
 
 .sidenav i {
@@ -24,9 +27,10 @@ img {
 
 .menu {
     margin: 1rem 0 0 1rem;
-    color: white;
-    background:#530082;
+    color: #E1E1E6;
+    background:#483C67;
 }
+
 
 
 

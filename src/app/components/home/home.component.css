@@ -1,9 +1,14 @@
 .card {
     width: 90%;
     margin: auto;
-    background-color: rgb(235,235,235);
+    background-color: #E1E1E6;
 }
 
 img {
     height: 20rem;
+}
+
+.card-title{
+    font-family: 'Fira Code';
+    font-weight: bold;
 }
