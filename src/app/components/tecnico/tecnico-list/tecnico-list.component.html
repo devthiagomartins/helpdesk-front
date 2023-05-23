@@ -1,5 +1,11 @@
 <div class="container">
-    <div class="mat-elevation-z8">
+  <h1>TÉCNICO</h1>
+  <button  class="mat-elevation-z4" mat-raised-button color="primary">NOVO TÉCNICO</button>
+  <mat-form-field appearance="standard">
+    <mat-label id="labelFilter">Filter</mat-label>
+    <input matInput (keyup)="applyFilter($event)" placeholder="Ex. abc">
+  </mat-form-field> 
+  <div class="mat-elevation-z8">
         <table mat-table [dataSource]="dataSource">
       
           <ng-container matColumnDef="position">
