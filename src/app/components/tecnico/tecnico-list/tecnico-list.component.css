@@ -38,3 +38,9 @@ mat-form-field input{
 mat-form-field input::placeholder{
     color: #44475a;
 }
+
+
+
+.delete {
+    color: #ff2c2f;
+}
