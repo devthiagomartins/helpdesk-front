@@ -60,4 +60,6 @@ input{
     font-weight: 500;
 }
 
-
+mat-icon {
+    opacity: 0.7;
+}

@@ -38,12 +38,3 @@ mat-form-field input{
 mat-form-field input::placeholder{
     color: #44475a;
 }
-
-
-h1 {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 2rem;
-    color: #988BC7;
-    font-weight: bold;
-}
