@@ -1,0 +1,38 @@
+<div class="container mat-elevation-z8">
+    <form action="" class="form">
+        <h1 class="fullWidth">DELEÇÃO</h1>
+        <img class="fullWidth" src="assets/img/tecnico-create.svg" alt="Helpdesk">
+        <section class="section">
+            <mat-checkbox [disabled]="true" color="primary" class="margin">ADMINISTRADOR</mat-checkbox>
+            <mat-checkbox [disabled]="true" color="primary" class="margin">CLIENTE</mat-checkbox>
+            <mat-checkbox [disabled]="true" color="primary" class="margin">CLIENTE</mat-checkbox>
+          </section>
+          
+          <mat-form-field class="fullWidth" appearance="legacy">
+            <mat-label class="firaCode">NOME</mat-label>
+            <input [(ngModel)]="cliente.nome" [disabled]="true" name="nome" matInput>
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          </mat-form-field>
+
+          <mat-form-field class="fullWidth" appearance="legacy">
+            <mat-label class="firaCode">CPF</mat-label>
+            <input [(ngModel)]="cliente.cpf" name="cpf" [disabled]="true" matInput mask="000.000.000-00">
+            <mat-icon matSuffix>pin</mat-icon>
+          </mat-form-field>
+
+          <mat-form-field class="fullWidth" appearance="legacy">
+            <mat-label class="firaCode">EMAIL</mat-label>
+            <input [(ngModel)]="cliente.email" name="email" [disabled]="true" matInput>
+            <mat-icon matSuffix>mail</mat-icon>
+          </mat-form-field>
+
+          <mat-form-field class="fullWidth" appearance="legacy">
+            <mat-label class="firaCode">SENHA</mat-label>
+            <input [(ngModel)]="cliente.senha" name="senha" [disabled]="true" type="password" matInput>
+            <mat-icon matSuffix>password</mat-icon>
+          </mat-form-field>
+          <button (click)="delete()" class="fullWidth mat-elevation-z4" mat-flat-button color="primary">DELETAR</button>
+          <button routerLink="../../" class="fullWidth mat-elevation-z4" mat-flat-button color="warn">CANCELAR</button>
+          <p class="fullWidth">Desenvolvido por Thiago Martins.</p>
+    </form>
+</div>
