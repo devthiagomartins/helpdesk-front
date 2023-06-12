@@ -1,5 +1,5 @@
 <div class="container">
-    <button class="mat-elevation-z4" mat-raised-button color="primary">NOVO CHAMADO</button>
+    <button routerLink="create" class="mat-elevation-z4" mat-raised-button color="primary">NOVO CHAMADO</button>
     <mat-form-field appearance="standard">
       <mat-label id="labelFilter">Filter</mat-label>
       <input matInput (keyup)="applyFilter($event)" placeholder="Ex. abc">

@@ -1,0 +1,62 @@
+<div class="container mat-elevation-z8">
+    <img class="fullWidth" src="assets/img/chamado-create.svg" alt="chamado-create">
+
+    <form class="form">
+      <mat-form-field class="fullWidth" appearance="outline">
+        <mat-label>DESCRIÇÃO DO CHAMADO</mat-label>
+        <input [formControl]="titulo" required matInput placeholder="Ex. Troca de bateria">
+      </mat-form-field>  
+    </form>
+
+    <div class="status-prioridade">
+       <mat-form-field appearance="outline">
+        <mat-label>STATUS</mat-label>
+        <mat-select [formControl]="status" required>
+            <mat-option value="0">ABERTO</mat-option>
+            <mat-option value="1">EM ANDAMENTO</mat-option>
+            <mat-option value="2">ENCERRADO</mat-option>
+        </mat-select>
+       </mat-form-field>
+       
+       <mat-form-field appearance="outline">
+        <mat-label>PRIORIDADE</mat-label>
+        <mat-select [formControl]="prioridade" required>
+            <mat-option value="0">BAIXA</mat-option>
+            <mat-option value="1">MÉDIA</mat-option>
+            <mat-option value="2">ALTA</mat-option>
+        </mat-select>
+       </mat-form-field> 
+    </div>
+
+    <div class="tecnico">
+        <mat-form-field class="fullWidth" appearance="outline">
+            <mat-label>TÉCNICO</mat-label>
+            <mat-select [formControl]="tecnico" required>
+                <mat-option value="0">THIAGAO</mat-option>
+            </mat-select>
+           </mat-form-field> 
+
+    </div>
+
+    <div class="cliente">
+        <mat-form-field class="fullWidth" appearance="outline">
+            <mat-label>CLIENTE</mat-label>
+            <mat-select [formControl]="cliente" required>
+                <mat-option class="teste" value="0">THIAGAO CLIENTE</mat-option>
+            </mat-select>
+           </mat-form-field> 
+
+    </div>
+
+    <form action="" class="form">
+        <mat-form-field class="fullWidth" appearance="outline">
+            <mat-label>DETALHES DO CHAMADO</mat-label>
+            <textarea [formControl]="observacoes" required class="descricao" matInput placeholder="Ex. troca de bateria antiga do pc."></textarea>
+        </mat-form-field>
+    </form>
+
+    <button [disabled]="!validaCampos()" class="fullWidth mat-elevation-z4" mat-flat-button color="primary">CADASTRAR</button>
+    <button routerLink="../" class="fullWidth mat-elevation-z4" mat-flat-button color="warn">CANCELAR</button>
+    <p class="fullWidth">Desenvolvido por Thiago Martins.</p>
+
+</div>

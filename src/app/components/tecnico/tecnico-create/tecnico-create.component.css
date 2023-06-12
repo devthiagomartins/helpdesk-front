@@ -53,6 +53,7 @@ p {
 mat-label{
     color: #E1E1E6;
     font-weight: 500;
+    font-family: 'Fira Code';
 }
 
 input{

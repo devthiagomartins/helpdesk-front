@@ -1,0 +1,65 @@
+.container{
+    width: 45%;
+    margin: auto;
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: .199rem;
+    background-color: #483C67;
+}
+
+.fullWidth{
+    width: 100%;
+}
+
+img{
+    height: 8rem;
+    margin: auto;
+}
+
+input{
+    color: #988BC7;
+    font-weight: 500;
+}
+
+.status-prioridade {
+    display: flex;
+    justify-content: space-between;
+}
+
+.status-prioridade mat-form-field {
+    width: 49%; 
+}
+
+.descricao {
+    min-height: 6rem;
+    max-height: 10rem;
+    color: #988BC7;
+    font-weight: 500;
+}
+
+button{
+    margin-top: .5rem;
+    font-family: 'Fira Code';
+}
+
+p {
+    margin-top: 1rem;
+    opacity: .5;
+    text-align: center;
+    font-family: 'Fira Code';
+    font-weight: bold;
+    color:#E1E1E6;
+}
+
+mat-label{
+    color: #E1E1E6;
+    font-weight: 500;
+    font-family: 'Fira Code';
+}
+
+mat-option {
+    color: #988BC7;
+    font-weight: 500;
+    font-family: 'Fira Code';
+}
+
+
