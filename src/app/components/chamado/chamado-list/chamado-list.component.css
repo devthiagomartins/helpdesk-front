@@ -1,0 +1,56 @@
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+table {
+    width: 100%;
+    border-radius: 50%;
+}
+
+table th{
+    color: #44475a;
+    font-weight: bold;
+   font-family: 'Fira Code';
+}
+
+table td {
+    color:#988BC7;
+    font-weight: 500;
+    font-family: 'Fira Code';
+}
+
+mat-form-field {
+    width: 100%;
+}
+
+
+mat-form-field input{
+    color: #988BC7;
+    font-weight: 500;
+}
+
+#labelFilter{
+    color: #44475a;
+    font-weight: bold;
+}
+
+mat-form-field input::placeholder{
+    color: #44475a;
+}
+
+
+
+.delete {
+    color: #ff2c2f;
+}
+
+
+mat-radio-group {
+   display: flex;
+   justify-content: space-around; 
+   margin-bottom: 1rem;
+   color:#E1E1E6;
+   font-weight: 500;
+   font-family: 'Fira Code';
+}

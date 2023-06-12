@@ -64,11 +64,19 @@ export class TecnicoUpdateComponent implements OnInit {
     }, ex => {
       if(ex.error.errors) {
         ex.error.errors.forEach(element => {
-          this.toast.error(element.message,ex.error.message);
+          if(ex.status == 403){
+            this.toast.error("Você não possui permissão para atualizar um técnico", "Acesso Negado");  
+          } else {
+            this.toast.error(element.message,ex.error.message);
+          }          
           console.log(ex)
         });
       } else {
-        this.toast.error(ex.error.message, ex.error.error);
+        if(ex.status == 403){
+          this.toast.error("Você não possui permissão para atualizar um técnico", "Acesso Negado");  
+        } else {
+          this.toast.error(ex.error.message, ex.error.error);
+        }        
         console.log(ex)
       }
     });
